@@ -1,0 +1,22 @@
+docker run -d --name clock devopsdockeruh/exec_bash_exercise
+
+docker exec -it clock bash
+
+root@cecad4ad2ba0:/usr/app# tail -f ./logs.txt
+Sat, 21 Dec 2019 09:19:34 GMT
+Sat, 21 Dec 2019 09:19:37 GMT
+Sat, 21 Dec 2019 09:19:40 GMT
+Sat, 21 Dec 2019 09:19:43 GMT
+Secret message is:
+"Docker is easy"
+Sat, 21 Dec 2019 09:19:49 GMT
+Sat, 21 Dec 2019 09:19:52 GMT
+Sat, 21 Dec 2019 09:19:55 GMT
+Sat, 21 Dec 2019 09:19:58 GMT
+Secret message is:
+"Docker is easy"
+Sat, 21 Dec 2019 09:20:04 GMT
+Sat, 21 Dec 2019 09:20:07 GMT
+Sat, 21 Dec 2019 09:20:10 GMT
+Sat, 21 Dec 2019 09:20:13 GMT
+

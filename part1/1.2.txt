@@ -1,0 +1,15 @@
+docker ps -a
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS                  PORTS               NAMES
+b6d7dd4851e6        jupyter/tensorflow-notebook   "tini -g -- start-no…"   6 days ago          Exited (0) 6 days ago                       romantic_williams
+44442909a34c        jupyter/tensorflow-notebook   "tini -g -- start-no…"   6 days ago          Exited (0) 6 days ago                       flamboyant_wilson
+658d88f63531        jupyter/tensorflow-notebook   "tini -g -- service …"   6 days ago          Exited (1) 6 days ago                       amazing_aryabhata
+ceae926f4b55        jupyter/tensorflow-notebook   "tini -g -- service …"   6 days ago          Created                                     nostalgic_poincare
+47fa2c50ad61        jupyter/tensorflow-notebook   "tini -g -- service …"   6 days ago          Exited (1) 6 days ago                       musing_shaw
+6ab4f076507b        jupyter/tensorflow-notebook   "tini -g -- service …"   6 days ago          Created                                     stupefied_mayer
+b846a9ed1a91        jupyter/tensorflow-notebook   "tini -g -- start-no…"   6 days ago          Exited (0) 6 days ago                       keen_kalam
+
+
+docker images
+REPOSITORY                    TAG                 IMAGE ID            CREATED             SIZE
+jupyter/tensorflow-notebook   latest              10ed21b4837c        2 weeks ago         3.82GB
+
