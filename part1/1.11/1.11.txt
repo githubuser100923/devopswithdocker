@@ -1,0 +1,2 @@
+docker build -t back .
+docker run -d -v $(pwd):/logs.txt -p 8000:8000 back

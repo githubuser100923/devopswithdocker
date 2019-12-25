@@ -1,0 +1,3 @@
+I create image that contains Jupyter Notebook and Tensorflow. It can be developed further by installing more pacakges and other programming languages like R.
+
+https://hub.docker.com/r/lankinen/data-science
