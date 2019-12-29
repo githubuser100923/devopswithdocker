@@ -10,17 +10,16 @@ services:
         ports:
           -  8000:8000
         environment:
-          -  REDIS=redis_container
-          -  DB_HOST=db_container
+          -  REDIS=redis
+          -  DB_HOST=db
           -  DB_USERNAME=user
           -  DB_PASSWORD=example
     redis_container:
-        image: redis_container
+        image: redis
         environment:
           -  REDIS=localhost
     db:
         image: postgres
-        container_name: db_container
         environment:
           -  POSTGRES_USER=user
           -  POSTGRES_PASSWORD=example
