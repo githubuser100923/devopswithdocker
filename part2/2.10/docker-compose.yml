@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+    front:
+        image: front
+        ports:
+          -  5000:5000
+    back:
+        image: back
+        ports:
+          -  8000:8000
+        environment:
+          -  REDIS=redis
+          -  DB_HOST=db
+          -  DB_USERNAME=user
+          -  DB_PASSWORD=example
+    redis:
+        image: redis
+        environment:
+          -  REDIS=localhost
+    db:
+        image: postgres
+        volumes:
+          -  ./data/:/data
+        environment:
+          -  POSTGRES_USER=user
+          -  POSTGRES_PASSWORD=example
+          -  PGDATA=/data
+    proxy: 
+      image: jwilder/nginx-proxy 
+      volumes:
+        -  ./ngnix/ngnix.conf:/etc/nginx/nginx.conf
+        -  /var/run/docker.sock:/tmp/docker.sock:ro
+      ports:
+        - 80:80
