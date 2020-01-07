@@ -1,0 +1,8 @@
+front start = 333.6 MB
+back start = 244.1 MB
+
+front new = 305 MB
+back new = 215 MB
+
+front diff = 28.6 MB
+back diff = 29.1 MB
